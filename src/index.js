@@ -443,4 +443,27 @@ process.on('SIGINT', () => {
   process.exit(0);
 });
 
-main();
+// 「このファイルが直接実行されたか？」を判定する条件式
+if (require.main === module) {
+  main();
+}
+
+module.exports = {
+  loadData,
+  saveData,
+  renderHeader,
+  renderMenu,
+  formatMoney,
+  generateAccountId,
+  findAccountById,
+  pause,
+  createAccount,
+  viewAccountDetails,
+  listAllAccounts,
+  depositFunds,
+  withdrawFunds,
+  transferFunds,
+  viewTransactionHistory,
+  deleteAccount,
+  exitApp,
+};
