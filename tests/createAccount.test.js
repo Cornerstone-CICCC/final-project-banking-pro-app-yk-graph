@@ -1,6 +1,3 @@
+const { createAccount } = require('../src/index.js')
 
-const { createAccount } = require('../src/index.js');
-
-describe('createAccount', () => {
-
-});
+describe('createAccount', () => {})
