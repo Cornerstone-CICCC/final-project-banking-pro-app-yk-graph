@@ -443,7 +443,7 @@ process.on('SIGINT', () => {
   process.exit(0);
 });
 
-// 「このファイルが直接実行されたか？」を判定する条件式
+// check if the script is being run directly (not imported as a module) and only then call main()
 if (require.main === module) {
   main();
 }
