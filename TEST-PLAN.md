@@ -2,7 +2,7 @@
 
 ## Test Environment
 - **Node.js Version:** v24.11.0
-- **Operating System:** macOS
+- **Operating System:** macOS Sequoia 15.7.3
 
 ## Test Summary
 
