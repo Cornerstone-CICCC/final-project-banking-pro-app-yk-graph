@@ -3,26 +3,26 @@ jest.mock('readline', () => ({
     question: jest.fn(),
     close: jest.fn(),
   })),
-}))
+}));
 
-const { renderHeader, renderMenu } = require('../src/index.js')
+const { renderHeader, renderMenu } = require('../src/index.js');
 
 describe('render functions', () => {
   beforeEach(() => {
-    jest.spyOn(console, 'log').mockImplementation(() => {})
-  })
+    jest.spyOn(console, 'log').mockImplementation(() => {});
+  });
 
   afterEach(() => {
-    console.log.mockRestore()
-  })
+    console.log.mockRestore();
+  });
 
   test('renderHeader should log 3 lines for the header', () => {
-    renderHeader()
-    expect(console.log).toHaveBeenCalledTimes(3)
-  })
+    renderHeader();
+    expect(console.log).toHaveBeenCalledTimes(3);
+  });
 
   test('renderMenu should log 9 lines for the menu', () => {
-    renderMenu()
-    expect(console.log).toHaveBeenCalledTimes(9)
-  })
-})
+    renderMenu();
+    expect(console.log).toHaveBeenCalledTimes(9);
+  });
+});
