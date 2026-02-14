@@ -460,6 +460,8 @@ if (require.main === module) {
 }
 
 module.exports = {
+  data,
+  ask,
   loadData,
   saveData,
   renderHeader,
