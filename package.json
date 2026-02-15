@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "start": "node src/index.js",
-    "test": "jest --testMatch='**/tests/**/*.test.js'"
+    "test": "jest --testMatch='**/tests/**/*.test.js'",
+    "test:feature": "jest --config jest.feature.config.js"
   },
   "dependencies": {
     "chalk": "^4.1.2",
